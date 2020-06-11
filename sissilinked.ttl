@@ -70,21 +70,3 @@
 		foaf:depiction <item/Elisabeth_Coronation_Photograph>,
 					   <item/Family_Lithograph_in_Gödöllő>;
 		dbo:influenced <concept/Imperial_Style>.
-
-
-
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-<event/hungarian_coronation>
-<place/royal_palace_of_gödöllő>
