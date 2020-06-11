@@ -1,0 +1,72 @@
+@base <https://sissilinked.github.io/>.
+@prefix rdf: <https://www.w3.org/TR/rdf-schema/#>.
+@prefix foaf: <//xmlns.com/foaf/0.1/>.
+@prefix person: <http://www.w3.org/ns/person/>.
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
+@prefix gnd: <http://d-nb.info/gnd/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix rel: <http://purl.org/vocab/relationship/>.
+@prefix eac-cpf: <https://eac.staatsbibliothek-berlin.de/>.
+@prefix rdau: <http://rdaregistry.info/Elements/u/>.
+@prefix gn: <http://www.geonames.org/ontology>.
+@prefix schema: <http://schema.org/>.
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix bio: <http://purl.org/vocab/bio/0.1/>.
+@prefix event: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core.html>.
+@prefix mo: <http://musicontology.com/>.
+@prefix viaf: <http://viaf.org/viaf/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema>.
+@prefix owl: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+
+
+<person/Elisabeth_of_Austria>
+		rdf:type foaf:Person;
+		foaf:name 'Empress Elisabeth of Austria';
+		person:birthName 'Elisabeth Amalie Eugenie Herzogin in Bayern';
+		foaf:givenName 'Elisabeth';
+		foaf:familyName 'von Wittelsbach';
+		gndo:variantNameOfThePerson 'Sissi';
+		gndo:pseudnymNameOfThePerson 'Countess of Hohenems';
+		foaf:gender 'Female';
+		gndo:memberOfTheFamily gnd:118634232,   #House of Wittelsbach
+							   gnd:118544233,   #House of Habsburg
+		                       gnd:1075812380;  #House of Lorraine						
+		gndo:titleOfNobilty 'Duchess in Bavaria',
+		 					'Queen consort of Hungary', 
+		 					'Empress consort of Austria';
+		gndo:predecessor gnd:119446707; #Maria Anna of Savoy
+		gndo:successor gnd:118637126;   #Zita of Bourbon-Parma
+		gndo:functionOrRole 'Imperial and Royal Majesty';
+		gndo:dateOfBirth '24-12-1837'^^xsd:date;
+		person:placeOfBirth gn:2867714; #Munich
+		gndo:dateOfDeath '10-09-1898'^^xsd:date; 
+		person:placeOfDeath gn:2660646; #Geneva
+		dbo:causeOfDeath 'Stabbing';
+		dbo:killedBy <person/Luigi_Lucheni>;
+		dbo:placeOfBurial gnd:4272994-4; #Imperial Crypt
+		rel:spouseOf <person/Franz_Joseph_I>;
+		rel:parentOf dbr:Archduchess_Sophie_of_Austria,
+					 gnd:119532271, #Archduchess Gisela of Austria
+					 gnd:118603698, #Rudolf, Crown Prince of Austria
+					 gnd:118919830; #Archduchess Marie Valerie of Austria
+		dbo:coronationDate '08-06-1867'^^xsd:date;
+		dbo:livingPlace <place/Royal_Palace_of_Gödöllő>;
+		gndo:placeOfActivity viaf:265182984, #Austrian Empire
+		                     gnd:4075613-0,  #Austria-Hungary
+		                     gnd:4005044-0,  #Kingdom of Bavaria
+		                     gnd:4022047-3,  #Greece
+		                     gnd:4053881-3;  #Switzerland
+		dbo:waistSize '16'^^xsd:double;
+		eac-cpf:biogHist 'Elisabeth (born December 24, 1837, Munich, Bavaria [Germany]—died September 10, 1898, Geneva, Switzerland), empress consort of Austria from April 24, 1854, when she married Emperor Franz Joseph. She was also queen of Hungary (crowned June 8, 1867) after the Austro-Hungarian Ausgleich, or Compromise. Her assassination brought her rather unsettled life to a tragic end.';
+		foaf:isPrimaryTopicOf <item/Sissi_The_Young_Empress>;
+		rdau:P60630 <item/Black_Court_Dress>,
+					<item/Personal_Laundalet>;
+		foaf:depiction <item/Elisabeth_Coronation_Photograph>,
+					   <item/Family_Lithograph_in_Gödöllő>;
+		dbo:influenced <concept/Imperial_Style>.
