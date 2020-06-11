@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SissiLinked - RDF</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+	
+	<!-- topnav -->
+		<div class="topnav" id="myTopnav">
+        <a class="active" href="index.html">SissiLinked</a>
+        <a href="items.html"><i>Items</i></a>
+        <a href="ermodel.html"><i>E/R Model</i></a>
+        <a href="metadatastandards.html"><i>Metadata Standards</i></a>
+        <a href="metadataal.html"><i>Metadata Alignment</i></a>
+        <a href="theoreticalm.html"><i>Theoretical Model</i></a>
+        <a href="conceptualm.html"><i>Conceptual Model</i></a>
+        <a href="datadescription.html"><i>Data Description</i></a>
+        <a href="rdf.html"><i>RDF</i></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    	<i class="fa fa-bars"></i>
+    	</a>
+          </div>
+          <!-- Wrapper -->
+			<div id="wrapper" class="divided">	
+			
+				
+				<!-- ER model -->
+	                 <!-- Introduction -->
+                  <section class="spotlight style4 fullscreen orient-center content-align-left image-position-right onscroll-image-fade-in" id="top">
+				  <div class="content">
+							<h2>RDF</h2>
+							<p align="justify">In this final step data are described using a <b>RDF statement</b>, that we decided to serialize through <b>Turtle</b>. URIs have been minted for every entity described. In addition, we connected our data to other related items and resources on the World Wide Web by using different types of <b>semantic associations</b>. </p></div>
+			
+						<div class="image">
+							<img src="images/spotlight12.jpg" alt="" />
+						</div>
+					</section>
+					
+				<!-- Intro -->
+				<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h4>Schemas, ontologies and vocabularies selected in the Theoretical model will be now Schemas, ontologies and vocabularies selected in the Theoretical model will be now used to define a set of properties useful to describe people, places, events and concepts.</h4>	
+				</section>
+				
+				<!-- Code opzione 1-->
+									<section class="wrapper style1">										
+										<div class="inner">
+											<pre class="content"><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+&lt;production/sketch_analytical_engine&gt;
+	rdf:type crm:E12_Production;
+	crm:P108_has_produced &lt;object/sketch_analytical_engine&gt;;
+	crm:P7_took_place_at tgn:7002445; # London
+	crm:P14_carried_out_by &lt;person/luigi_federico_menabrea&gt;;
+	crm:P4_has_time-span "1843"^^xsd:gYear.
+
+
+&lt;object/sketch_analytical_engine&gt;
+	rdf:type rdac:Item.en;
+	rdaid:titleOfItem.en "Sketch of the Analytical Engine invented by Charles Babbage ... 
+			     with notes by the translator. Extracted from the 'Scientific Memoirs,.'etc."^^xsd:string;
+	rdaio:categoryOfItem.en fabio:Book;
+	rdau:publisher.en viaf:129445994; #R. & J. E. Taylor;
+	rdau:subject.en dbr:Analytical_Engine, &lt;person/charles_babbage&gt;;
+	rdaio:custodianCorporateBody.en viaf:121814978;
+	rdau:translator.en &lt;person/ada_lovelace&gt;;
+	rdau:annotator.en &lt;person/ada_lovelace&gt;;
+	rdaid:notesOnItem.en "The translator's notes signed: A.L.L. ie. Augusta Ada King, Countess Lovelace in which she describes 
+			    the first algorithm in history."^^xsd:string;
+	rdfs:seeAlso &lt;https://www.fourmilab.ch/babbage/sketch.html&gt;.
+
+        
+                                            </code></pre>
+                        
+                       <h5 align="left">&nbsp&nbsp<a href="prova.ttl" class="icon solid style2 fa-download" download="newprova.ttl"></a>&nbsp&nbsp&nbsp<a href="https://www.instagram.com/unibo/" class="icon brands style2 fa-github-alt"><span class="label">GitHub</span></a></h5>
+
+									</div>
+									</section>
+									
+				<!-- Intro -->
+				<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h4>Schemas, ontologies and vocabularies selected in the Theoretical model will be now Schemas, ontologies and vocabularies selected in the Theoretical model will be now used to define a set of properties useful to describe people, places, events and concepts.</h4>	
+				</section>
+				
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://twitter.com/UniboDHDK" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/DHDK.unibo/" class="icon brands style2 fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/unibo/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul>
+							This is a non-commercial project for scholarly purposes only.
+							<br>
+							<a href="https://creativecommons.org/licenses/by-sa/4.0/">Copyright Creative Commons</a>
+							<p>&copy; SissiLinked. Images <a href="credits.html">Credits</a>.</p>
+						</div>
+					</footer>
+					
+<!-- Scrolltotop -->
+				<div id="btnScrollToTop">
+	               </div>	
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+	</body>
+</html>
