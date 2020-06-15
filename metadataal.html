@@ -1,0 +1,603 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SissiLinked - Alignment</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+	
+<!-- topnav -->
+		<div class="topnav" id="myTopnav">
+        <a class="active menu" href="index.html">SissiLinked</a>
+        <a class="menu" href="items.html"><i>Items</i></a>
+        <a class="menu" href="ermodel.html"><i>E/R Model</i></a>
+        <a class="menu" href="metadatastandards.html"><i>Metadata Standards</i></a>
+        <a class="menu" href="metadataal.html"><i>Metadata Alignment</i></a>
+        <a class="menu" href="theoreticalm.html"><i>Theoretical Model</i></a>
+        <a class="menu" href="conceptualm.html"><i>Conceptual Model</i></a>
+        <a class="menu" href="datadescription.html"><i>Data Description</i></a>
+        <a class="menu" href="rdf.html"><i>RDF</i></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    	<i class="fa fa-bars"></i>
+    	</a>
+          </div>
+          
+
+				
+				<!-- ER model -->
+	                 <!-- Introduction -->
+                  <section class="spotlight style4 fullscreen orient-center content-align-left image-position-center onscroll-image-fade-in" id="top">
+				  <div class="content">
+							<h2>Metadata Alignment</h2>
+							<p align="justify">Metadata standards and ontologies introduced in the previous section use different ways for expressing similar information. This happens because each standard has been created to address data that are specific for an item of some nature and may be not as fitting for another item or another system, as much as the language used in a museum differs from the one used inside a library. The alignment, therefore, provides a <b>visual comparison</b> of the single <b>elements</b> that are relevant to address information related to <b>people</b>, <b>places</b>, <b>dates</b>, and <b>subjects/concepts</b> inside our scenario. </p></div>
+			
+						<div class="image">
+							<img src="images/spotlight06.jpg" alt="" />
+						</div>
+					</section>
+					<br>
+					<!-- Intro -->
+				
+				
+				<!-- Standards -->
+					<!-- Table -->
+					<section class="wrapper style3 align-center ">
+					<div class="inner">
+						<div class="inner" id="topofthepage">
+							<h4 class="credits">Note: In some cases there may be more than one answer for each standard, when it expresses the same information using a wider and more specific range of elements. Properties are expressed in natural language in the form of questions and are divided in four tables: <a class="menu" href="#who">WHO</a>, <a class="menu" href="#when">WHEN</a>, <a class="menu" href="#where">WHERE</a>, <a class="menu" href="#what">WHAT</a>.</h4>
+							<br><hr><br><br id="who">
+									
+									<section>
+										<div class="content">
+											<h2>Who</h2>
+											<br><br>
+											<div class="inner">
+												<table class="al">
+													<thead>
+ 														<tr>
+															<th>Property</th>
+															<th>CCO</th>
+															<th>CDWA LITE</th>
+															<th>EDM</th>
+															<th>CIDOC CRM</th>
+															<th>ISAD(G)</th>
+															<th>METS</th>
+															<th>ISBD</th>
+															<th>UNIMARC</th>
+															<th>MARC21</th>
+															<th>DCMI</th>
+														</tr>
+													</thead>
+	
+												<tbody>
+										
+  <tr>
+    <td>Who is the creator?</td>
+    <td>Creator<br>Creator Role<br>Qualifier</td>
+    <td>cdwalite:nameCreator </td>
+    <td>creator</td>
+    <td>P94_has created (was created by): E28_Conceptual ObjectP14_carried out by: E39_Actor</td>
+    <td>Author</td>
+    <td>marcrel:CMP</td>
+    <td>1.4 Statement of responsibility, First statement</td>
+    <td>200 $f First Statement&nbspof&nbspResponsibility<br>700 $a Personal Name - Primary Intellectual Responsibility<br>710 $a Corporate Body Name - Primary Intellectual Responsibility</td>
+    <td>245 $f Statement&nbspof Responsibility<br>100 - Main Entry-Personal Name, $a: Personal Name<br> </td>
+    <td>dc:creator</td>
+  </tr>
+  <tr>
+    <td>Who is the contributor?</td>
+    <td>Creator Role</td>
+    <td>cdwalite:roleCreator</td>
+    <td>contributor</td>
+    <td>P11_had participant: E39_Actor</td>
+    <td>Name of creator(s)</td>
+    <td>dc:contributor</td>
+    <td>1.4 Statement of responsibility, Subsequent statement</td>
+    <td>200 $g Subsequent Statement of Responsibility<br>702 $a Personal Name- Alternative Intellectual<span>Responsibility<br>712 $a Corporate Body Name - Alternative Intellectual<span>Responsibility</td>
+    <td>70X-75X - Added Entry Fields - General Information <br>700 Personal Name <br>710 Corporate Name <br>720 Uncontrolled Name</td>
+    <td>dc:contributor</td>
+  </tr>
+  <tr>
+    <td>Who is the owner?</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>P51 has former or current owner: E39_Actor</td>
+    <td>Immediate source of acquisition or transfer</td>
+    <td>&lt;mets:agent ROLE= ”IPOWNER”&gt;</td>
+    <td>7.11 Note on copy in hand </td>
+    <td>317 – Provenance Note</td>
+    <td>561 Ownership and Custodial History</td>
+    <td>dcterms:provenance</td>
+  </tr>
+  <tr>
+    <td>Who is the publisher?</td>
+    <td>Creator Role</td>
+    <td>cdwalite:roleCreator</td>
+    <td>dc:publisher</td>
+    <td>P14_carried out by: E39_Actor</td>
+    <td></td>
+    <td>&lt;mods:publisher&gt;</td>
+    <td>4.2 Name of publisher, producer and/or distributor</td>
+    <td>210 $c Name of Publisher, Distributor, etc.<br>712$a Corporate Body Name – Secondary Responsibility </td>
+    <td>25X-28X - Edition, Imprint,Etc. - 260 Publication, Distribution, etc $b: Name of publisher</td>
+    <td>dc:publisher</td>
+  </tr>
+  <tr>
+    <td>Who is the provider?</td>
+    <td>Source</td>
+    <td></td>
+    <td>edm:dataProvider</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Who is the subject?</td>
+    <td>Subject</td>
+    <td>&lt;cdwalite:subjectTerm&gt;</td>
+    <td>dc:subject </td>
+    <td>P129_is subject of<br></td>
+    <td>Item</td>
+    <td>&lt;mets:fileGrp ID&gt;</td>
+    <td></td>
+    <td>6XX – Subject Analysis and Bibliographical History Block 600 Personal Name Used as Subject <br>601 Corporate Body Name Used as Subject <br>602 Family Name Used as Subject</td>
+    <td>6XX: Subject Access Fields<br>600 Subject Added Entry - Personal name<br>610 - Subject Added Entry-Corporate Name</td>
+    <td>dc:subject</td>
+  </tr>
+  <tr>
+    <td>Who owns the rights for image reproduction?</td>
+    <td></td>
+    <td>&lt;cdwalite:rightsResource&gt; </td>
+    <td>dc:rights </td>
+    <td>E30_Right: P75_is possessed by: E39_Actor</td>
+    <td>Conditions governing reproduction</td>
+    <td>&lt;mets:rightsMD&gt;</td>
+    <td>7.10.3 Notes relating to use or audience</td>
+    <td>300 General Note<br>314 Notes Pertaining to Responsibility</td>
+    <td>540 Terms Governing Use and Reproduction $a Terms governing use and reproduction and <br>542 - Information Relating to Copyright Status $d Copyright holder</td>
+    <td>dc:rights<br>dcterms:rightsHolder</td>
+  </tr>
+  <tr>
+    <td>Who are the performers? </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>&lt;marcrel:PRF&gt;</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+												</table>
+											</div>
+
+										</div>
+									</section>	
+									<br><br><br><br id="when">
+			
+<!-- When -->
+									<section>
+										<div class="content">
+
+											<h2>When</h2>
+											<br><br>
+											<div class="inner">
+												<table class="al">
+													<thead>
+														<tr>
+															<th>Property</th>
+															<th>CCO</th>
+															<th>CDWA LITE</th>
+															<th>EDM</th>
+															<th>CIDOC CRM</th>
+															<th>ISAD(G)</th>
+															<th>METS</th>
+															<th>ISBD</th>
+															<th>UNIMARC</th>
+															<th>MARC21</th>
+															<th>DCMI</th>
+														</tr>
+													</thead>
+												<tbody>
+  <tr>
+    <td>When was the item created?</td>
+    <td>Creation Date</td>
+    <td>&lt;cdwalite:displayCreationDate&gt;</td>
+    <td>dcterms:created </td>
+    <td>E63_Beginning of existence:E65_Creation<br>E12_Production:P4_has time-span:E52_Time-Span</td>
+    <td>Date(s)</td>
+    <td>dcterms:created<br>mods:dateCreated</td>
+    <td>4.6 Date of printing or manufacture</td>
+    <td>210$h Date of Manufacture</td>
+    <td>25X-28X – Edition and Imprint Fields<br>260 - Publication, Distribution etc.<br>$g – Date of manufacture</td>
+    <td>dcterms:created</td>
+  </tr>
+  <tr>
+    <td>When was the item published?</td>
+    <td>Date</td>
+    <td></td>
+    <td></td>
+    <td>E12_Production:P4_has time-span:E52_Time-Span</td>
+    <td>Date(s)</td>
+    <td>dcterms:available<br>dcterms:issued</td>
+    <td>4.3 Date of publication, production and/or distribution</td>
+    <td>210 $d Date of Publication, Distribution, etc.</td>
+    <td>25X-28X – Edition and Imprint Fields<br>260 - Publication, Distribution etc.<br>$c – Date of publication, distribution, etc.</td>
+    <td>dcterms:issued</td>
+  </tr>
+  <tr>
+    <td>What is the duration?</td>
+    <td>Time</td>
+    <td></td>
+    <td>dcterms:extent</td>
+    <td>P92_brought into existence:E77_Persistent Item</td>
+    <td></td>
+    <td>&lt;blapsi:file_duration&gt;</td>
+    <td>5.1.5 Playing time, Extent</td>
+    <td>127$a Duration</td>
+    <td></td>
+    <td>dcterms:extent</td>
+  </tr>
+  <tr>
+    <td>What is the epoque?</td>
+    <td>Display date</td>
+    <td>&lt;cdwalite:earliestDate&gt; &lt;cdwalite:latestDate&gt;</td>
+    <td>dcterms:temporal</td>
+    <td>P117_occurs during: E2_temporal entity</td>
+    <td></td>
+    <td>dcterms:temporal</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>dcterms:temporal</td>
+  </tr>
+</tbody>
+												</table>
+											</div>
+
+										</div>
+									</section>	<br><br><br id="where">
+<!-- Where -->
+
+									<section>
+										<div class="content">
+
+											<h2>Where</h2>
+											<br><br>
+											<div class="inner">
+												<table class="al">
+													<thead>
+														<tr>
+															<th>Property</th>
+															<th>CCO</th>
+															<th>CDWA LITE</th>
+															<th>EDM</th>
+															<th>CIDOC</th>
+															<th>ISAD(G)</th>
+															<th>METS</th>
+															<th>ISBD</th>
+															<th>UNIMARC</th>
+															<th>MARC21</th>
+															<th>DCMI</th>
+														</tr>
+													</thead>
+												<tbody>
+  <tr>
+    <td>Where was the item created?</td>
+    <td>Creation Location</td>
+    <td></td>
+    <td>dc:coverage</td>
+    <td>P7_took place at: E53_place</td>
+    <td></td>
+    <td>dcterms:coverage </td>
+    <td>4.4 Place of printing or manufacture</td>
+    <td>102$ Country of publication or production, $b Locality<br>620 Place of publication, production, etc.</td>
+    <td>25X-28X: Edition, Imprint, Etc. Fields - 264 - Production, Publication, Distribution, Manufacture, and Copyright Notice<br>- $a Place of production</td>
+    <td>dc:coverage</td>
+  </tr>
+  <tr>
+    <td>Where was the item located?</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>P53_has former or current location</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>255 Past Location and call number</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Where is located now?</td>
+    <td>Current Location,<br>Location</td>
+    <td>&lt;cdwalite:locationName</td>
+    <td>currentLocation</td>
+    <td>P55_has current location</td>
+    <td>Existance and location of original</td>
+    <td>mods:place</td>
+    <td></td>
+    <td>852 Location and call number<br>899 Location (National use Block)</td>
+    <td>841-88X - Holdings, Alternate Graphics, Etc.-General Information<br>850 - Holding Institution<br>$a: Holding Institution</td>
+    <td>dcterms:location</td>
+  </tr>
+  <tr>
+    <td>Where was the item published?</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>P7_took place at: E53_place</td>
+    <td></td>
+    <td>mods:edition</td>
+    <td>4.1 place of publication, production and/or distribution</td>
+    <td>102$ Country of publication or production<br>102$b Locality<br>620 Place of publication, production, etc.</td>
+    <td>25X-28X – Edition and Imprint Fields<br>260 - Publication, Distribution etc.<br>$a – Place of publication, distribution, etc.</td>
+    <td>dc:coverage</td>
+  </tr>
+</tbody>
+												</table>
+											</div>
+
+										</div>
+									</section> <br><br><br id="what">
+<!-- What -->
+
+									<section>
+										<div class="content">
+
+											<h2>What</h2>
+											<br><br>
+											<div class="inner">
+												<table class="al">
+													<thead>
+														<tr>
+															<th>Property</th>
+															<th>CCO</th>
+															<th>CDWA LITE</th>
+															<th>EDM</th>
+															<th>CIDOC CRM</th>
+															<th>ISAD(G)</th>
+															<th>METS</th>
+															<th>ISBD</th>
+															<th>UNIMARC</th>
+															<th>MARC21</th>
+															<th>DCMI</th>
+														</tr>
+													</thead>
+												<tbody>
+  <tr>
+    <td>What is the title?</td>
+    <td>Title Type: preferred</td>
+    <td>&lt;cdwalite:title&gt; </td>
+    <td>title,<br>title</td>
+    <td>P102_has title: E35_title</td>
+    <td>Title</td>
+    <td>&lt;dc:title&gt;<br>&lt;mods:title&gt;</td>
+    <td>1.1 Title proper</td>
+    <td>200 Title, statement of responsibility $a Title Proper</td>
+    <td>245 Title Statement $a Title Proper</td>
+    <td>dc:title</td>
+  </tr>
+  <tr>
+    <td>What is the alternative title?</td>
+    <td>Title <br>Type: alternate</td>
+    <td>&lt;cdwalite:title pref="preferred"&gt;</td>
+    <td>dcterms:alternative </td>
+    <td>P139_has alternative form: E41_appellation</td>
+    <td></td>
+    <td>&lt;mods:titleInfo type=”alternative”&gt;</td>
+    <td>1.2 Parallel title</td>
+    <td>200 $e Other Title Information</td>
+    <td>245 $b Remainder of title</td>
+    <td>dc:alternative</td>
+  </tr>
+  <tr>
+    <td>What is the original title?</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>P102_has title: E35_title</td>
+    <td></td>
+    <td></td>
+    <td>7.1.1.1. Translation note </td>
+    <td>200 $d Parallel Title Proper<br>517 $a Other Variant Titles </td>
+    <td>245 $b Remainder of title<br>246 Varying form of title</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>What is the subject?</td>
+    <td>Subject</td>
+    <td></td>
+    <td>subject</td>
+    <td>P129_is about</td>
+    <td></td>
+    <td>&lt;mods:topic&gt;</td>
+    <td></td>
+    <td>606 Topical Name Used as Subject<br>607 Geographical Name Used as Subject<br>610 Uncontrolled Subject Terms</td>
+    <td>650 Subject added entry, Topical heading<br>651 Subject added entry - geographic name<br>653 Index term - uncontrolled <br>647 Subject Added Entry-Named Event</td>
+    <td>dc:subject</td>
+  </tr>
+  <tr>
+    <td>What is the format?</td>
+    <td>Measurements,<br>Format</td>
+    <td>&lt;cdwalite:formatMeasurements&gt; </td>
+    <td>format</td>
+    <td></td>
+    <td></td>
+    <td>mix:Format</td>
+    <td>0.3 Media Type<br>3 Material or type of resource specific area</td>
+    <td>336  Type of Electronic Resource <br>856 Electronic Location and Access</td>
+    <td>856 Electronic Location and access $q - Electronic format type</td>
+    <td>dc:format</td>
+  </tr>
+  <tr>
+    <td>What is the type?</td>
+    <td>Type</td>
+    <td>&lt;cdwalite:objectWorkType&gt; </td>
+    <td>work type</td>
+    <td>P2_has type: E55_Type</td>
+    <td></td>
+    <td>&lt;dc:type&gt;</td>
+    <td>0.1 Content Form 0.2 Content Qualification<br>7.0.1 Notes on the content form and media type area </td>
+    <td>608 Form, Genre or Physical Characteristics Heading</td>
+    <td>Leader 06 - Type of record</td>
+    <td>dc:type</td>
+  </tr>
+  <tr>
+    <td>What is the description?</td>
+    <td>Description</td>
+    <td></td>
+    <td>description</td>
+    <td>P3_has note</td>
+    <td>Note(s)</td>
+    <td>&lt;dc:description&gt;</td>
+    <td>7.10.2 Notes providing a summary</td>
+    <td>303 General Notes Pertaining to Descriptive Information<br>330 $a Summary or Abstract</td>
+    <td>520 Summary, Abstract Note</td>
+    <td>dc:description</td>
+  </tr>
+  <tr>
+    <td>What is the providing country?</td>
+    <td>Creation Locations ?</td>
+    <td></td>
+    <td></td>
+    <td>P50_has current keeper: E40_Legal Body </td>
+    <td></td>
+    <td></td>
+    <td>4.1.9 Addition to the place of publication, production and distribution</td>
+    <td>621 Place and Date of Provenance $a – Country (Nation state) or Larger entity country </td>
+    <td>662 Subject Added Entry – Hierarchical Place Name<br>$a Country or larger entity</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>What is the technique used?</td>
+    <td>Technique</td>
+    <td>&lt;cdwalite:displayMaterialsTech&gt;</td>
+    <td>edm:realizes</td>
+    <td>P33_used specific technique</td>
+    <td></td>
+    <td></td>
+    <td>7.10.2 Notes providing a summary</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>What is the material used?</td>
+    <td>Material</td>
+    <td>&lt;cdwalite:displayMaterialsTech&gt;</td>
+    <td>edm:realizes</td>
+    <td>P45_consists of: E57_material</td>
+    <td></td>
+    <td>dcterms:medium</td>
+    <td>5 Material description area<br>7.3 Notes on the material or type of resource specific area </td>
+    <td>315 Notes Pertaining to Material (or Type of Publication) Specific Information</td>
+    <td>340 - Physical Medium</td>
+    <td>dcterms:medium</td>
+  </tr>
+  <tr>
+    <td>What is the language?</td>
+    <td>Language</td>
+    <td></td>
+    <td>dc:language</td>
+    <td>P72_has language: E56_Language</td>
+    <td>Language</td>
+    <td>mods:language</td>
+    <td>7.1.2.2 Notes on language</td>
+    <td>101 Language of the resource</td>
+    <td>546 Language Note</td>
+    <td>dc:language</td>
+  </tr>
+  <tr>
+    <td>What are the notes related to the item?</td>
+    <td>note</td>
+    <td>&lt;cdwalite:descriptiveNote&gt; </td>
+    <td></td>
+    <td>P3_has note</td>
+    <td>Note(s)</td>
+    <td>mods:note</td>
+    <td>7 Note area</td>
+    <td>300 General Note</td>
+    <td>5XX: Note Fields - General Information -520- Summary, ect - $a Summary, etc.</td>
+    <td></td>
+  </tr>
+</tbody>
+												</table>
+											</div>
+
+										</div>
+									</section>	
+	    					 </div>
+						</section>
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://twitter.com/UniboDHDK" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/DHDK.unibo/" class="icon brands style2 fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/unibo/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul>
+							This is a non-commercial project for scholarly purposes only.
+							<br>
+							<a href="https://creativecommons.org/licenses/by-sa/4.0/">Copyright Creative Commons</a>
+							<p>&copy; SissiLinked. Images <a href="credits.html">Credits</a>.</p>
+						</div>
+					</footer>
+					
+<!-- button-->
+ <div id="btnScrollToTop">
+	</div>
+							</ul>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+	</body>
+</html>
