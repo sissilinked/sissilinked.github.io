@@ -1,0 +1,5 @@
+SissiLinked.
+
+SissiLinked is a project realized for the examination of the course of Knowledge Organization and Digital Methods in the Cultural Heritage Domain held by Francesca Tomasi within the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna.
+
+The key concept of this project relies on the idea that it is possible to describe an historical person, in a full ranging prospective, starting from the connections between the person itself and other heterogenous entities, including real items coming from the different domains of libraries, archives and museums. In order to do that, we explored the possibilities offered by the technologies used in Semantic Web, such as vocabularies, ontologies, RDF and URIs. Therefore, the aim of the project is to model an organized linked open data environment that will connect concepts, items, people, places, events and, more generally, data about Elisabeth of Austria, in the most interoperable and semantically meaningful way possible.
